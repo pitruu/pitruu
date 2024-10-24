@@ -44,7 +44,7 @@
 #navigation a:active {
     display: block;
     text-decoration: none;
-    color: var(--dark-purple);
+    color: black;
     padding: 3px;
     border: 1px solid;
     background: linear-gradient(black, grey, white);
@@ -56,6 +56,20 @@
 #navigation p::before {
     content: url("/art/puutu.png");
     vertical-align: middle;
+}
+      p {
+    margin: 5px;
+}
+
+#content {
+    grid-area: content;
+    width: 700px;
+    height:600px;
+    text-align: center;
+    box-sizing: border-box;
+    max-height: 700px;
+    overflow:scroll;
+
 }
      </style>
   <center>
@@ -75,13 +89,7 @@
   </div>
   <div class="column">
 
-     <div id="navigation"/>
-      
-     <label for="back">
-        <p>go back</p>
-     </label>
-        
-     </div>
+    
     <img src="bg.png">
     <img src="bg.png">
     <img src="bg.png">
@@ -89,6 +97,14 @@
     <img src="bg.png">
     <img src="bg.png">
   </div>
+    <div id="navigation"/>
+      
+     <label for="back">
+        ::before
+        <p>go back</p>
+     </label>
+        
+     </div>
    </center>
 </body>
 </html>
