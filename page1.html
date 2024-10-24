@@ -31,6 +31,8 @@
     background: linear-gradient(white, grey, black);
     margin: 3px;
     height: 25px;
+             content: url("/art/puutu.png");
+    vertical-align: middle;
 }
       #navigation {
     grid-area: navigation;
@@ -40,8 +42,7 @@
 }
       }
 
-#navigation label:active,
-#navigation a:active {
+#navigation label:active {
     display: block;
     text-decoration: none;
     color: black;
@@ -54,23 +55,12 @@
 
 
 #navigation p::before {
-    content: url("/art/puutu.png");
-    vertical-align: middle;
+
 }
       p {
     margin: 5px;
-}
-
-#content {
-    grid-area: content;
-    width: 700px;
-    height:600px;
-    text-align: center;
-    box-sizing: border-box;
-    max-height: 700px;
-    overflow:scroll;
-
-}
+      }
+      
      </style>
   <center>
      
@@ -100,7 +90,6 @@
     <div id="navigation"/>
       
      <label for="back">
-        ::before
         <p>go back</p>
      </label>
         
